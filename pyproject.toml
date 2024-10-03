@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fastapi-cloud-healthcheck-azure-vm"
-version = "0.1.0"
+version = "1.0.1"
 description = "This package is designed to validate the operational status of Azure Virtual Machines (VMs). It provides comprehensive diagnostics on the health of an Azure VM by checking its power state, disk health, and network interface status."
 authors = ["Yogesh Selvarajan <yogeshselvarajan@gmail.com>"]
 license = "MIT"
