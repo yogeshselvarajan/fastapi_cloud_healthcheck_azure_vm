@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "fastapi-cloud-healthcheck-azure-vm"
+version = "0.1.0"
+description = "This package is designed to validate the operational status of Azure Virtual Machines (VMs). It provides comprehensive diagnostics on the health of an Azure VM by checking its power state, disk health, and network interface status."
+authors = ["Yogesh Selvarajan <yogeshselvarajan@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/yogeshselvarajan/fastapi_cloud_healthcheck_azure_vm"
+packages = [{include = "fastapi_cloud_healthcheck_azure_vm"}]
+keywords = ["fastapi", "healthcheck", "cloud", "azure", "vm", "compute"]
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Framework :: FastAPI",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+azure-identity = "^1.12.0"
+azure-mgmt-compute = "^26.0.0"
+azure-mgmt-network = "^25.0.0"
+fastapi_cloud_healthcheck = "^0.1.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
